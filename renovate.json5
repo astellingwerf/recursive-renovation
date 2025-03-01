@@ -30,14 +30,13 @@
   ],
   "packageRules": [
     {
-      matchBaseBranches: [
-        "renovate/main-alpine-3.x"
-      ],
-      matchDepNames: [
-        "/^alpine_3_.*/"
-      ],
+      // conditions
+      matchBaseBranches: "renovate/main-alpine-3.x",
+      matchDepNames: "/^alpine_3_.*/",
       matchDatasources: "repology",
-      groupName: "all Alpine packages"
+      // settings
+      automerge: true,
+      groupName: "all Alpine packages",
     }
   ]
 }
