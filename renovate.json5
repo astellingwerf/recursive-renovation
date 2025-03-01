@@ -2,9 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
   "baseBranches": [
-    "main",
+    "$default",
     // Recursive renovation
     "/renovate\/main-alpine-3\.x/",
+    "/renovate\/alpine-3\.x/"
   ],
   "customManagers": [
     {
