@@ -6,7 +6,7 @@ on:
   pull_request:
     branches:
       - "main"
-      - "renovate/main-alpine-3.x"
+      - "renovate/main-recursive-alpine-3.x"
 
 jobs:
   build:
