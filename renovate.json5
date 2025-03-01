@@ -9,7 +9,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^Dockerfile$"],
+      "fileMatch": [
+        "^Dockerfile$"
+      ],
       "matchStrings": [
         "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s(ENV|ARG) .*?_VERSION=\"(?<currentValue>.*)\"\\s"
       ],
@@ -17,12 +19,13 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["^Dockerfile$"],
+      "fileMatch": [
+        "^Dockerfile$"
+      ],
       "matchStrings": [
         "depName=(?<depName>alpine)_(?<major>\\d+)_(?<minor>\\d+)/"
       ],
-      "autoReplaceStringTemplate":
-        "depName={{{depName}}}_{{{newMajor}}}_{{{newMinor}}}/",
+      "autoReplaceStringTemplate": "depName={{{depName}}}_{{{newMajor}}}_{{{newMinor}}}/",
       "currentValueTemplate": "{{{major}}}.{{{minor}}}",
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker",
@@ -37,6 +40,13 @@
       // settings
       automerge: true,
       groupName: "all Alpine packages",
+    },
+    {
+      // conditions
+      matchDepNames: "alpine",
+      matchDatasources: "docker",
+      // settings
+      additionalBranchPrefix: "recursive"
     }
   ]
 }
