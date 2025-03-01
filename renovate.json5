@@ -4,7 +4,7 @@
   "baseBranches": [
     "$default",
     // Recursive renovation
-    "renovate/main-recursive-*",
+    "renovate/main-recursive-alpine-3.x",
   ],
   "customManagers": [
     {
