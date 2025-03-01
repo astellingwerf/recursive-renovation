@@ -45,6 +45,7 @@
       matchDepNames: "/^alpine_3_.*/",
       matchDatasources: "repology",
       // settings
+      // automerging prevents baseBranch commits from users different from the Renovate bot
       automerge: true,
       groupName: "all Alpine packages",
     },
