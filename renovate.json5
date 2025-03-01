@@ -22,4 +22,5 @@
       "versioningTemplate": "docker",
     }
   ],
+  "dependencyDashboard": true,
 }
