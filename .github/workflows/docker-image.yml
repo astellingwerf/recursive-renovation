@@ -5,7 +5,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches:
-      - "renovate/*"
+      - "main"
+      - "renovate/main-alpine-3.x"
 
 jobs:
   build:
