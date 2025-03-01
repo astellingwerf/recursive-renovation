@@ -3,7 +3,7 @@
   "baseBranches": [
     "main",
     // Attempt recursive renovation
-    "renovate/alpine-3.x"
+    "renovate/main-alpine-3.x"
   ],
   "customManagers": [
     {
