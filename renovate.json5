@@ -42,9 +42,16 @@
     {
       // conditions
       matchBaseBranches: "renovate/main-recursive-alpine-3.x",
+      // settings
+      enabled: false,
+    },
+    {
+      // conditions
+      matchBaseBranches: "renovate/main-recursive-alpine-3.x",
       matchDepNames: "/^alpine_3_.*/",
       matchDatasources: "repology",
       // settings
+      enabled: true,
       // automerging prevents baseBranch commits from users different from the Renovate bot
       automerge: true,
       groupName: "all Alpine packages",
