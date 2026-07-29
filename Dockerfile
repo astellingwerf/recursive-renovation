@@ -2,7 +2,7 @@ FROM alpine:3.24
 # renovate: datasource=repology depName=alpine_3_24/bash versioning=maven
 ARG BASH_VERSION="5.3.9-r1"
 # renovate: datasource=repology depName=alpine_3_24/curl versioning=maven
-ARG CURL_VERSION="8.20.0-r1"
+ARG CURL_VERSION="8.21.0-r0"
 
 RUN apk add bash=${BASH_VERSION} curl=${CURL_VERSION} && \
     apk list --installed | grep "bash-${BASH_VERSION}" && \
